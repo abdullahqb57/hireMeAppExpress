@@ -1,0 +1,99 @@
+doctype html
+html(lang='en')
+  head
+    title HireMe App
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // ===============================================================================================
+    link(rel='icon', type='image/png', href='https://colorlib.com/etc/cf/ContactFrom_v4/images/icons/favicon.ico')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/bootstrap/css/bootstrap.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/animate/animate.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/css-hamburgers/hamburgers.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/animsition/css/animsition.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/select2/select2.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/daterangepicker/daterangepicker.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/css/util.css')
+    link(rel='stylesheet', type='text/css', href='https://colorlib.com/etc/cf/ContactFrom_v4/css/main.css')
+    // ===============================================================================================
+  body
+    .container-contact100
+      .wrap-contact100
+        form.contact100-form.validate-form(action='/', method='POST')
+          span.contact100-form-title
+            h3 Hire-Me `The Hacking School BootCamp`
+          .wrap-input100.validate-input(data-validate='Name is required')
+            span.label-input100 Your Name
+            input.input100(type='text', name='name', placeholder='Enter your valid name')
+            span.focus-input100
+          .wrap-input100.validate-input(data-validate='Valid email is required: ex@abc.xyz')
+            span.label-input100 Email
+            input.input100(type='text', name='email', placeholder='Enter your valid email addess')
+            span.focus-input100
+          .wrap-input100.input100-select
+            span.label-input100 My Available Service
+            div
+              select.selection-2(name='service')
+                option Choose Services
+                option Build Personal WebSite
+                option Backend Development
+                option UI/UX Designing
+                option Python Development
+            span.focus-input100
+          .wrap-input100.input100-select
+            span.label-input100 Budget
+            div
+              select.selection-2(name='budget')
+                option Select Budget
+                option 1500 $
+                option 2000 $
+                option 2500 $
+            span.focus-input100
+          .wrap-input100.validate-input(data-validate='Message is required')
+            span.label-input100 Enter Job
+            textarea.input100(name='message', placeholder='Enter Job Description Here......')
+            span.focus-input100
+          .container-contact100-form-btn
+            .wrap-contact100-form-btn
+              .contact100-form-bgbtn
+              button.contact100-form-btn
+                span
+                  | Submit
+                  i.fa.fa-long-arrow-right.m-l-7(aria-hidden='true')
+    #dropDownSelect1
+    // ===============================================================================================
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/jquery/jquery-3.2.1.min.js')
+    // ===============================================================================================
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/animsition/js/animsition.min.js')
+    // ===============================================================================================
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/bootstrap/js/popper.js')
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/bootstrap/js/bootstrap.min.js')
+    // ===============================================================================================
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/select2/select2.min.js')
+    script.
+      $(".selection-2").select2({
+      minimumResultsForSearch: 20,
+      dropdownParent: $('#dropDownSelect1')
+      });
+    // ===============================================================================================
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/daterangepicker/moment.min.js')
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/daterangepicker/daterangepicker.js')
+    // ===============================================================================================
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/vendor/countdowntime/countdowntime.js')
+    // ===============================================================================================
+    script(src='https://colorlib.com/etc/cf/ContactFrom_v4/js/main.js')
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-23581568-13')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-23581568-13');
