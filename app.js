@@ -27,7 +27,7 @@ app.post('/', (req,res,next) => {
             secure: false, 
             auth: {
                 user: 'abdullah@abdullahking.me',
-                pass:  'github@123'
+                pass:  '**********'
             }
         });
 
